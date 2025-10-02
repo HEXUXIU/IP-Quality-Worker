@@ -173,7 +173,8 @@ fmt.Println(string(body))
 ---
 
 ## 📊 项目动态（底部动态图）
-## Star 历史图（好用就点个Ster吧!!!）
+
+* Star 历史图（好用就点个Ster吧!!!）
 
 <a href="https://www.star-history.com/#HEXUXIU/IP-Quality-Worker&Date">
  <picture>
@@ -182,8 +183,11 @@ fmt.Println(string(body))
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=HEXUXIU/IP-Quality-Worker&type=Date" />
  </picture>
 </a>
+
 ## 🔗 延伸阅读
 
 * [Cloudflare Workers 文档](https://developers.cloudflare.com/workers/)
 * [IPQualityScore API 文档](https://www.ipqualityscore.com/documentation)
 * [AbuseIPDB API 文档](https://docs.abuseipdb.com/)
+
+
