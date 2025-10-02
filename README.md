@@ -34,15 +34,37 @@
 2. 新建 Worker，将 [`worker.js`](./worker.js) 粘贴进去
 3. 保存并绑定路由（如 `https://ipq.yourdomain.com`）
 
-### 2. 获取 API Key
+## 2.支持的 API & Key 申请
 
-* [申请 IPQualityScore Key](https://www.ipqualityscore.com/)
-* [申请 AbuseIPDB Key](https://www.abuseipdb.com/)
+* [AbuseIPDB](https://www.abuseipdb.com/) → 免费注册后获取 API Key
+* [IPQualityScore](https://www.ipqualityscore.com/) → 免费 5000 次/月
+* [MaxMind GeoIP2](https://www.maxmind.com/) → 注册后可申请 Key
+* [DB-IP](https://db-ip.com/) → 免费每天 1000 请求
+* [IPWHOIS.io](https://ipwhois.io/) → 免费 API Key
+* [Project HoneyPot](https://www.projecthoneypot.org/) → 免费申请 Key
+* [DNSBL 查询](https://www.spamhaus.org/lookup/) → 无需 Key
+* [ip-api.com](http://ip-api.com/) → 免费使用（有速率限制）
+* [ipinfo.io](https://ipinfo.io/) → 免费注册获取 Token
+* [ipdata.co](https://ipdata.co/) → 免费 1500 次/天
+* [GeoJS](https://www.geojs.io/) → 免费 API
+* [ipregistry.co](https://ipregistry.co/) → 免费 Key
+* [APILayer IPStack](https://ipstack.com/) → 注册免费套餐
+
+> **说明**：其中 AbuseIPDB、IPQualityScore、MaxMind 等被视为敏感接口，需要传入 Key 才启用。
+
 
 **传入方式**
 
 * 参数：`?key=YOUR_API_KEY&ip=1.2.3.4`
 * Header：`Authorization: Bearer YOUR_API_KEY`
+```javascript{
+  "maxmind": "你的MaxMind_Key",
+  "ipwhois": "你的IPWHOIS_Key",
+  "ipdata": "你的IPDATA_Key",
+  "ipregistry": "你的IPREGISTRY_Key",
+  "abuseipdb": "你的AbuseIPDB_Key"
+}
+
 
 ### 3. 请求示例
 
