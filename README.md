@@ -35,7 +35,7 @@
 
 1. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/)  
 2. 新建 Worker，将 [`worker.js`](./worker.js) 粘贴进去  
-3. 保存并绑定路由，例如 `https://ip-proxy.hzc0911.workers.dev`  
+3. 保存并绑定路由，例如 `https://ip-proxy.example.workers.dev`  
 
 ---
 
@@ -90,7 +90,7 @@ eyJtYXhtaW5kIjoiTUFTTUxPTkciLCJpcHdob2lzIjoiS0VZIiwiaXBkYXRhIjoiS0VZIiwiaXByZWdp
 #### 🔹 cURL
 
 ```bash
-curl -H "X-API-KEYS: <Base64_JSON>" "https://ip-proxy.hzc0911.workers.dev/ip=8.8.8.8.json"
+curl -H "X-API-KEYS: <Base64_JSON>" "https://ip-proxy.example.workers.dev/ip=8.8.8.8.json"
 ```
 
 #### 🔹 Python
@@ -99,14 +99,14 @@ curl -H "X-API-KEYS: <Base64_JSON>" "https://ip-proxy.hzc0911.workers.dev/ip=8.8
 import requests
 
 headers = {"X-API-KEYS": "<Base64_JSON>"}
-resp = requests.get("https://ip-proxy.hzc0911.workers.dev/ip=8.8.8.8.json", headers=headers)
+resp = requests.get("https://ip-proxy.example.workers.dev/ip=8.8.8.8.json", headers=headers)
 print(resp.json())
 ```
 
 #### 🔹 JavaScript (Node / Browser)
 
 ```javascript
-const res = await fetch("https://ip-proxy.hzc0911.workers.dev/ip=8.8.8.8.json", {
+const res = await fetch("https://ip-proxy.example.workers.dev/ip=8.8.8.8.json", {
   headers: {"X-API-KEYS": "<Base64_JSON>"}
 });
 console.log(await res.json());
@@ -115,7 +115,7 @@ console.log(await res.json());
 #### 🔹 Go
 
 ```go
-req, _ := http.NewRequest("GET", "https://ip-proxy.hzc0911.workers.dev/ip=8.8.8.8.json", nil)
+req, _ := http.NewRequest("GET", "https://ip-proxy.example.workers.dev/ip=8.8.8.8.json", nil)
 req.Header.Set("X-API-KEYS", "<Base64_JSON>")
 client := &http.Client{}
 resp, _ := client.Do(req)
